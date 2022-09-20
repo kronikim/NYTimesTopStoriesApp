@@ -27,6 +27,7 @@
 		D877BB8028DA6CED004421BF /* NYTopStoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877BB7F28DA6CED004421BF /* NYTopStoriesResponse.swift */; };
 		D877BB8228DA6ECB004421BF /* NYTTopStoriesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877BB8128DA6ECB004421BF /* NYTTopStoriesEndpoint.swift */; };
 		D877BB8528DA712A004421BF /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877BB8428DA712A004421BF /* AlertUtil.swift */; };
+		D877BB8828DA72A3004421BF /* ViewCodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877BB8728DA72A3004421BF /* ViewCodeConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		D877BB7F28DA6CED004421BF /* NYTopStoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTopStoriesResponse.swift; sourceTree = "<group>"; };
 		D877BB8128DA6ECB004421BF /* NYTTopStoriesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTTopStoriesEndpoint.swift; sourceTree = "<group>"; };
 		D877BB8428DA712A004421BF /* AlertUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtil.swift; sourceTree = "<group>"; };
+		D877BB8728DA72A3004421BF /* ViewCodeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,6 @@
 		D877BB2A28DA624E004421BF = {
 			isa = PBXGroup;
 			children = (
-				D877BB8328DA711A004421BF /* Utils */,
 				D877BB3528DA624E004421BF /* NYTimesTopStoriesApp */,
 				D877BB4C28DA6251004421BF /* NYTimesTopStoriesAppTests */,
 				D877BB5628DA6251004421BF /* NYTimesTopStoriesAppUITests */,
@@ -122,6 +123,8 @@
 		D877BB3528DA624E004421BF /* NYTimesTopStoriesApp */ = {
 			isa = PBXGroup;
 			children = (
+				D877BB8628DA7283004421BF /* Protocols */,
+				D877BB8328DA711A004421BF /* Utils */,
 				D877BB7E28DA6CCF004421BF /* Models */,
 				D877BB7B28DA6C88004421BF /* ViewModels */,
 				D877BB7828DA6BF4004421BF /* ViewControllers */,
@@ -169,7 +172,6 @@
 		D877BB6F28DA6937004421BF /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				D877BB7028DA6996004421BF /* StoryboardInstantiable.swift */,
 				D877BB7228DA69A8004421BF /* ViewModel.swift */,
 				D877BB7428DA69C3004421BF /* BaseViewController.swift */,
 			);
@@ -206,6 +208,15 @@
 				D877BB8428DA712A004421BF /* AlertUtil.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		D877BB8628DA7283004421BF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D877BB7028DA6996004421BF /* StoryboardInstantiable.swift */,
+				D877BB8728DA72A3004421BF /* ViewCodeConfiguration.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D877BB8828DA72A3004421BF /* ViewCodeConfiguration.swift in Sources */,
 				D877BB8028DA6CED004421BF /* NYTopStoriesResponse.swift in Sources */,
 				D877BB7328DA69A8004421BF /* ViewModel.swift in Sources */,
 				D877BB6A28DA6783004421BF /* NYError.swift in Sources */,

@@ -27,7 +27,9 @@ final class SplashVC: BaseViewController<SplashVM> {
         setupViews()
         
         viewModel?.homeDataLoaded = { [weak self] data in
-            //call next page
+            let networkManager : NetworkManager = Network()
+            let vc = TopStoriesListVC.instantiate(viewModel: TopStoriesListVM(response: data, networkManager: networkManager))
+            self?.navigationController?.pushViewController(vc, animated: true)
         }
         
         viewModel?.homeDataError = { [weak self] error in

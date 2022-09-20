@@ -26,6 +26,7 @@
 		D877BB7D28DA6C9B004421BF /* SplashVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877BB7C28DA6C9B004421BF /* SplashVM.swift */; };
 		D877BB8028DA6CED004421BF /* NYTopStoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877BB7F28DA6CED004421BF /* NYTopStoriesResponse.swift */; };
 		D877BB8228DA6ECB004421BF /* NYTTopStoriesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877BB8128DA6ECB004421BF /* NYTTopStoriesEndpoint.swift */; };
+		D877BB8528DA712A004421BF /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877BB8428DA712A004421BF /* AlertUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		D877BB7C28DA6C9B004421BF /* SplashVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVM.swift; sourceTree = "<group>"; };
 		D877BB7F28DA6CED004421BF /* NYTopStoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTopStoriesResponse.swift; sourceTree = "<group>"; };
 		D877BB8128DA6ECB004421BF /* NYTTopStoriesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTTopStoriesEndpoint.swift; sourceTree = "<group>"; };
+		D877BB8428DA712A004421BF /* AlertUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		D877BB2A28DA624E004421BF = {
 			isa = PBXGroup;
 			children = (
+				D877BB8328DA711A004421BF /* Utils */,
 				D877BB3528DA624E004421BF /* NYTimesTopStoriesApp */,
 				D877BB4C28DA6251004421BF /* NYTimesTopStoriesAppTests */,
 				D877BB5628DA6251004421BF /* NYTimesTopStoriesAppUITests */,
@@ -195,6 +198,14 @@
 				D877BB7F28DA6CED004421BF /* NYTopStoriesResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D877BB8328DA711A004421BF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D877BB8428DA712A004421BF /* AlertUtil.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +349,7 @@
 				D877BB8228DA6ECB004421BF /* NYTTopStoriesEndpoint.swift in Sources */,
 				D877BB6828DA6705004421BF /* Network.swift in Sources */,
 				D877BB6C28DA67BC004421BF /* Endpoint.swift in Sources */,
+				D877BB8528DA712A004421BF /* AlertUtil.swift in Sources */,
 				D877BB7128DA6996004421BF /* StoryboardInstantiable.swift in Sources */,
 				D877BB3928DA624E004421BF /* SceneDelegate.swift in Sources */,
 				D877BB7D28DA6C9B004421BF /* SplashVM.swift in Sources */,

@@ -32,7 +32,7 @@ final class SplashVC: BaseViewController<SplashVM> {
         
         viewModel?.homeDataError = { [weak self] error in
             self?.view.backgroundColor = .white
-           //alert
+            AlertUtil.showAlert(self!, withTitle: "Top Stories Error", andMessage: error.localizedDescription)
         }
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.1 ) { [weak self] in

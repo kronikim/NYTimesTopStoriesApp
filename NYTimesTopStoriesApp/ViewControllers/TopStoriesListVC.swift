@@ -59,7 +59,8 @@ final class TopStoriesListVC: BaseViewController<TopStoriesListVM> {
     }
     
     private func pushDetailPage(_ data: TopStories){
-        //Call detailvc
+        let vc = TopStoriesDetailVC.instantiate(viewModel: TopStoriesDetailVM(detailData: data))
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

@@ -28,6 +28,11 @@
 		D877BB8228DA6ECB004421BF /* NYTTopStoriesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877BB8128DA6ECB004421BF /* NYTTopStoriesEndpoint.swift */; };
 		D877BB8528DA712A004421BF /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877BB8428DA712A004421BF /* AlertUtil.swift */; };
 		D877BB8828DA72A3004421BF /* ViewCodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877BB8728DA72A3004421BF /* ViewCodeConfiguration.swift */; };
+		D877BB8A28DA735A004421BF /* TopStoriesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877BB8928DA735A004421BF /* TopStoriesListVC.swift */; };
+		D877BB8C28DA73B6004421BF /* TopStoriesListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877BB8B28DA73B6004421BF /* TopStoriesListVM.swift */; };
+		D877BB9228DA7485004421BF /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877BB8F28DA7485004421BF /* UIImageView+Extension.swift */; };
+		D877BB9328DA7485004421BF /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877BB9028DA7485004421BF /* UIFont+Extension.swift */; };
+		D877BB9428DA7485004421BF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877BB9128DA7485004421BF /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +78,11 @@
 		D877BB8128DA6ECB004421BF /* NYTTopStoriesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTTopStoriesEndpoint.swift; sourceTree = "<group>"; };
 		D877BB8428DA712A004421BF /* AlertUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtil.swift; sourceTree = "<group>"; };
 		D877BB8728DA72A3004421BF /* ViewCodeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeConfiguration.swift; sourceTree = "<group>"; };
+		D877BB8928DA735A004421BF /* TopStoriesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesListVC.swift; sourceTree = "<group>"; };
+		D877BB8B28DA73B6004421BF /* TopStoriesListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesListVM.swift; sourceTree = "<group>"; };
+		D877BB8F28DA7485004421BF /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		D877BB9028DA7485004421BF /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		D877BB9128DA7485004421BF /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +133,7 @@
 		D877BB3528DA624E004421BF /* NYTimesTopStoriesApp */ = {
 			isa = PBXGroup;
 			children = (
+				D877BB8D28DA744F004421BF /* Core */,
 				D877BB8628DA7283004421BF /* Protocols */,
 				D877BB8328DA711A004421BF /* Utils */,
 				D877BB7E28DA6CCF004421BF /* Models */,
@@ -182,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				D877BB7628DA6BA1004421BF /* SplashVC.swift */,
+				D877BB8928DA735A004421BF /* TopStoriesListVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -190,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				D877BB7C28DA6C9B004421BF /* SplashVM.swift */,
+				D877BB8B28DA73B6004421BF /* TopStoriesListVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -217,6 +230,24 @@
 				D877BB8728DA72A3004421BF /* ViewCodeConfiguration.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D877BB8D28DA744F004421BF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D877BB8E28DA7456004421BF /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D877BB8E28DA7456004421BF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D877BB9028DA7485004421BF /* UIFont+Extension.swift */,
+				D877BB8F28DA7485004421BF /* UIImageView+Extension.swift */,
+				D877BB9128DA7485004421BF /* UIView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,7 +382,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D877BB8828DA72A3004421BF /* ViewCodeConfiguration.swift in Sources */,
+				D877BB9328DA7485004421BF /* UIFont+Extension.swift in Sources */,
 				D877BB8028DA6CED004421BF /* NYTopStoriesResponse.swift in Sources */,
+				D877BB8A28DA735A004421BF /* TopStoriesListVC.swift in Sources */,
 				D877BB7328DA69A8004421BF /* ViewModel.swift in Sources */,
 				D877BB6A28DA6783004421BF /* NYError.swift in Sources */,
 				D877BB6E28DA67DC004421BF /* HTTPMethod.swift in Sources */,
@@ -361,9 +394,12 @@
 				D877BB8228DA6ECB004421BF /* NYTTopStoriesEndpoint.swift in Sources */,
 				D877BB6828DA6705004421BF /* Network.swift in Sources */,
 				D877BB6C28DA67BC004421BF /* Endpoint.swift in Sources */,
+				D877BB9228DA7485004421BF /* UIImageView+Extension.swift in Sources */,
+				D877BB8C28DA73B6004421BF /* TopStoriesListVM.swift in Sources */,
 				D877BB8528DA712A004421BF /* AlertUtil.swift in Sources */,
 				D877BB7128DA6996004421BF /* StoryboardInstantiable.swift in Sources */,
 				D877BB3928DA624E004421BF /* SceneDelegate.swift in Sources */,
+				D877BB9428DA7485004421BF /* UIView+Extension.swift in Sources */,
 				D877BB7D28DA6C9B004421BF /* SplashVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

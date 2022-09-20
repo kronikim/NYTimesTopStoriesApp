@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 final class TopStoriesDetailVC: BaseViewController<TopStoriesDetailVM> {
     private enum Constant {
@@ -135,7 +136,10 @@ extension TopStoriesDetailVC: ViewCodeConfiguration {
 }
 extension TopStoriesDetailVC: DetailSeeMoreDelegate {
     @objc func btnSeeMoreTapped() {
-       //open url
+        guard let url = viewModel?.detailData?.shortUrl else { return }
+        guard let url = URL(string: url) else { return  }
+        let safariVC = SFSafariViewController(url: url)
+        present(safariVC, animated: true, completion: nil)
     }
 }
 

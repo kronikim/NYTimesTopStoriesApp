@@ -26,7 +26,7 @@ final class NYStoryDetailView: UIView {
             lblDescription.text = detailData?.abstract
             lblAuthor.text = detailData?.byline
             
-            if let date = detailData?.publishedDate.split(separator: "T") {
+            if let date = detailData?.publishedDate?.split(separator: "T") {
                 lblPublishedDate.text = String(date[0])
             } else {
                 lblPublishedDate.text = detailData?.publishedDate

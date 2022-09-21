@@ -8,10 +8,10 @@
 import Foundation
 
 struct NYTopStoriesResponse {
-  var status : String
-  var copyright : String
-  var numResults : Int
-  var results : [TopStories]
+  var status : String?
+  var copyright : String?
+  var numResults : Int64?
+  var results : [TopStories]?
 }
 
 extension NYTopStoriesResponse : Decodable {
@@ -26,7 +26,7 @@ extension NYTopStoriesResponse : Decodable {
     let container = try decoder.container(keyedBy: storyResponseCodingKeys.self)
     status = try container.decode(String.self, forKey: .status)
     copyright = try container.decode(String.self, forKey: .copyright)
-    numResults = try container.decode(Int.self, forKey: .numResults)
+    numResults = try container.decode(Int64.self, forKey: .numResults)
     results = try container.decode([TopStories].self, forKey: .results)
   }
 }
@@ -34,15 +34,15 @@ extension NYTopStoriesResponse : Decodable {
 extension NYTopStoriesResponse {
         
     var numberOfRows: Int {
-        return results.count
+        return results?.count ?? 0
     }
     
     var isNewsListEmpty: Bool {
-        return results.isEmpty
+        return results?.isEmpty ?? true
     }
     
     func newsAtIndex(_ index: Int) -> TopStories {
-        let news = results[index]
+        let news = results?[index] ?? TopStories(section: "", subsection: "", title: "", itemType: "", abstract: "", byline: "", multimedia: [MultiMedia(url: "", format: "", height: 0, width: 0, subtype: "", caption: "", type: "")], shortUrl: "", publishedDate: "", url: "")
         return news
     }
 }
@@ -57,16 +57,16 @@ extension NYTopStoriesResponse {
 }
 
 struct TopStories {
-  let section : String
-  let subsection : String
-  let title : String
-  let itemType : String
-  let abstract : String
-  let byline : String
-  let multimedia : [MultiMedia]
-  let shortUrl : String
-  let publishedDate : String
-  let url : String
+  let section : String?
+  let subsection : String?
+  let title : String?
+  let itemType : String?
+  let abstract : String?
+  let byline : String?
+  let multimedia : [MultiMedia]?
+  let shortUrl : String?
+  let publishedDate : String?
+  let url : String?
 }
 
 extension TopStories : Decodable {
@@ -99,13 +99,13 @@ extension TopStories : Decodable {
 }
 
 struct MultiMedia {
-  let url : String
-  let format : String
-  let height : Int
-  let width : Int
-  let subtype: String
-  let caption: String
-  let type: String
+  let url : String?
+  let format : String?
+  let height : Int?
+  let width : Int?
+  let subtype: String?
+  let caption: String?
+  let type: String?
     
 }
 

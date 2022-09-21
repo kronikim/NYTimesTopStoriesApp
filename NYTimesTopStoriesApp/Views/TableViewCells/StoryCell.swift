@@ -32,17 +32,17 @@ class StoryCell: UITableViewCell {
         
         self.newsTitleLbl.text = newsItem.title
         let authorName = newsItem.byline
-        self.autherNameLbl.text = ((authorName.count > 0) ? authorName : "Unknown")
+        self.autherNameLbl.text = ((authorName?.count ?? 0 > 0) ? authorName : "Unknown")
         itemImgView.setRadius(radius: 6.0)
         itemImgView.contentMode = .scaleAspectFill
         
         DispatchQueue.global().async {
             let mediaArr = newsItem.multimedia
-            if let index = mediaArr.firstIndex(where: { item in
+            if let index = mediaArr?.firstIndex(where: { item in
                 item.format == ImageFormat.thumbnail.description
             }) {
-                let smallImgData = mediaArr[index]
-                if let url = URL(string: smallImgData.url) {
+                let smallImgData = mediaArr?[index]
+                if let url = URL(string: smallImgData?.url ?? "") {
                     self.loadImage(url: url)
                 }
             } else {

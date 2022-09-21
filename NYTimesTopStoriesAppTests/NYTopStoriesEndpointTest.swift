@@ -18,9 +18,8 @@ final class NYTTopStoriesEndpointTest: XCTestCase {
     }
 
     func testEndpointBuilder() {
-        var categoryValue = "politics"
-        let param = [URLQueryItem]()
-        var endpoint = NYTTopStoriesEndpoint(rawValue: categoryValue)
+        let categoryValue = "politics"
+        let endpoint = NYTTopStoriesEndpoint(rawValue: categoryValue)
         let APIKey = "Kr22gkq2DZGHsQ3H9O8fs5DMTYVBNPqU"
         XCTAssertEqual(endpoint?.schema, "https")
         XCTAssertEqual(endpoint?.baseURL, "api.nytimes.com")

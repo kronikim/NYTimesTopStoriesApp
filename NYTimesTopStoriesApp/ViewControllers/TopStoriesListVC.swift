@@ -19,6 +19,7 @@ final class TopStoriesListVC: BaseViewController<TopStoriesListVM> {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Top Stories List"
+        view.backgroundColor = .white
         applyCodeView()
    
         viewModel?.errorHandler = { [weak self] error in

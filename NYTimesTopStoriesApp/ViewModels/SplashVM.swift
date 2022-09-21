@@ -16,7 +16,7 @@ class SplashVM: ViewModel {
         self.networkManager = networkManager
     }
     func getHomeTabValues(){
-        networkManager.request(endpoint: NYTTopStoriesEndpoint.home) {( result :
+        networkManager.request(endpoint: NYTTopStoriesEndpoint.politics) {( result :
             Result<NYTopStoriesResponse, NYError>) in
             switch result {
                 case .success(let response):

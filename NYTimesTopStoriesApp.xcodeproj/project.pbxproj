@@ -41,6 +41,8 @@
 		D88F645828DA7D1700C7CCA6 /* NYStoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88F645728DA7D1700C7CCA6 /* NYStoryDetailView.swift */; };
 		D88F645A28DA7DF000C7CCA6 /* TopStoriesDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88F645928DA7DF000C7CCA6 /* TopStoriesDetailVC.swift */; };
 		D88F645C28DA7E3600C7CCA6 /* TopStoriesDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88F645B28DA7E3600C7CCA6 /* TopStoriesDetailVM.swift */; };
+		D89B04FC28DBC16D00D97411 /* HTTPMethodTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89B04FB28DBC16D00D97411 /* HTTPMethodTest.swift */; };
+		D89B04FE28DBC21C00D97411 /* NYTopStoriesEndpointTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89B04FD28DBC21C00D97411 /* NYTopStoriesEndpointTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,8 @@
 		D88F645728DA7D1700C7CCA6 /* NYStoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYStoryDetailView.swift; sourceTree = "<group>"; };
 		D88F645928DA7DF000C7CCA6 /* TopStoriesDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesDetailVC.swift; sourceTree = "<group>"; };
 		D88F645B28DA7E3600C7CCA6 /* TopStoriesDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesDetailVM.swift; sourceTree = "<group>"; };
+		D89B04FB28DBC16D00D97411 /* HTTPMethodTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethodTest.swift; sourceTree = "<group>"; };
+		D89B04FD28DBC21C00D97411 /* NYTopStoriesEndpointTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTopStoriesEndpointTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				D877BB4D28DA6251004421BF /* NYTimesTopStoriesAppTests.swift */,
+				D89B04FB28DBC16D00D97411 /* HTTPMethodTest.swift */,
+				D89B04FD28DBC21C00D97411 /* NYTopStoriesEndpointTest.swift */,
 			);
 			path = NYTimesTopStoriesAppTests;
 			sourceTree = "<group>";
@@ -472,7 +478,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D89B04FC28DBC16D00D97411 /* HTTPMethodTest.swift in Sources */,
 				D877BB4E28DA6251004421BF /* NYTimesTopStoriesAppTests.swift in Sources */,
+				D89B04FE28DBC21C00D97411 /* NYTopStoriesEndpointTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

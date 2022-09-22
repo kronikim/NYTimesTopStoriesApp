@@ -18,12 +18,12 @@ final class TopStoriesListVC: BaseViewController<TopStoriesListVM> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Top Stories List"
+        title = "Top Stories List".local
         view.backgroundColor = .white
         applyCodeView()
    
         viewModel?.errorHandler = { [weak self] error in
-            AlertUtil.showAlert(self!, withTitle: "Top Stories Error", andMessage: error.localizedDescription)
+            AlertUtil.showAlert(self!, withTitle: "Top Stories Error".local, andMessage: error.localizedDescription)
         }
     }
     
@@ -41,7 +41,7 @@ final class TopStoriesListVC: BaseViewController<TopStoriesListVM> {
         
         viewModel?.errorHandler = { [weak self] error in
             self?.activityIndicator.stopAnimating()
-            AlertUtil.showAlert(self!, withTitle: "Top Stories Error", andMessage: error.localizedDescription)
+            AlertUtil.showAlert(self!, withTitle: "Top Stories Error".local, andMessage: error.localizedDescription)
         }
     }
     
@@ -69,7 +69,7 @@ final class TopStoriesListVC: BaseViewController<TopStoriesListVM> {
 private extension TopStoriesListVC {
     func setupLabel() {
         noDataFoundLbl.isHidden = true
-        noDataFoundLbl.text = "Unfortunately No Top Story Found"
+        noDataFoundLbl.text = "Unfortunately No Top Story Found".local
         noDataFoundLbl.textAlignment = .center
         noDataFoundLbl.textColor = .black
         noDataFoundLbl.translatesAutoresizingMaskIntoConstraints = false
@@ -89,7 +89,7 @@ private extension TopStoriesListVC {
     
     func setupButton() {
         btnRetry.isHidden = true
-        btnRetry.text = "Try Again.."
+        btnRetry.text = "Try Again..".local
         btnRetry.textAlignment = .center
         btnRetry.textColor = .white
         btnRetry.backgroundColor = .black

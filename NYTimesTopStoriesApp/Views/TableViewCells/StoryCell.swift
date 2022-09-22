@@ -32,7 +32,7 @@ class StoryCell: UITableViewCell {
         
         self.newsTitleLbl.text = newsItem.title
         let authorName = newsItem.byline
-        self.autherNameLbl.text = ((authorName?.count ?? 0 > 0) ? authorName : "Unknown")
+        self.autherNameLbl.text = ((authorName?.count ?? 0 > 0) ? authorName : "Unknown".local)
         itemImgView.setRadius(radius: 6.0)
         itemImgView.contentMode = .scaleAspectFill
         

@@ -34,7 +34,7 @@ final class SplashVC: BaseViewController<SplashVM> {
         
         viewModel?.homeDataError = { [weak self] error in
             self?.view.backgroundColor = .white
-            AlertUtil.showAlert(self!, withTitle: "Top Stories Error", andMessage: error.localizedDescription)
+            AlertUtil.showAlert(self!, withTitle: "Top Stories Error".local, andMessage: error.localizedDescription)
         }
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.1 ) { [weak self] in
@@ -49,7 +49,7 @@ final class SplashVC: BaseViewController<SplashVM> {
         view.addSubview(nameLabel)
         logoImageView.image = UIImage(named: "logo_newYorkTimes")
         nameLabel.textColor = .black
-        nameLabel.text = "New York Times Top Stories".capitalized
+        nameLabel.text = "New York Times Top Stories".local
         
         NSLayoutConstraint.activate([
           logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),

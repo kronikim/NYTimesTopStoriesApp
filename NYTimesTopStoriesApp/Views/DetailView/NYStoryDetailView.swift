@@ -146,8 +146,8 @@ extension NYStoryDetailView: ViewCodeConfiguration {
         lblAuthor.font = UIFont.systemFont(ofSize: 18, weight: .heavy, traits: .traitItalic)
         
         lblPublishedDate.textAlignment = .right
-        
-        btnSeeMore.setTitle("See More", for: .normal)
+     
+        btnSeeMore.setTitle("See More".local, for: .normal)
         btnSeeMore.setTitleColor(UIColor.purple, for: .normal)
         btnSeeMore.showsTouchWhenHighlighted = true
         btnSeeMore.addTarget(self, action: #selector(btnSeeMoreTapped), for: .touchUpInside)

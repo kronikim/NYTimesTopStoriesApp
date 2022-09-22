@@ -10,10 +10,16 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        let networkManager : NetworkManager = Network()
+        let vc = SplashVC.instantiate(viewModel: SplashVM(networkManager: networkManager))
+        let nvc: UINavigationController  = UINavigationController(rootViewController: vc)
+        window?.rootViewController  = nvc
+        window?.makeKeyAndVisible()
         return true
     }
 

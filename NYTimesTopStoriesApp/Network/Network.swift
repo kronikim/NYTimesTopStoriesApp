@@ -32,12 +32,10 @@ class Network: NetworkManager {
                 print(error?.localizedDescription ?? "datatask error")
                 return
             }
-            
+ 
             guard response != nil , let data = data else { return }
-            print("network response ve data ok ")
             DispatchQueue.main.async {
                 if let responseObject = try? JSONDecoder().decode(T.self, from: data){
-                    print("network JSONDecoder decode ok")
                     print(responseObject)
                     completion(.success(responseObject))
                 }else {

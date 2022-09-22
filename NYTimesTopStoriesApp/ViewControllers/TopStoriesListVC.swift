@@ -47,7 +47,6 @@ final class TopStoriesListVC: BaseViewController<TopStoriesListVM> {
     
     //Update UI after fetching the data from server
     private func updateUI() {
-        print("updateUI")
         DispatchQueue.main.async {
             self.tableView.reloadData()
             self.activityIndicator.stopAnimating()

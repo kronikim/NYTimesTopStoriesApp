@@ -229,12 +229,8 @@ private extension NYStoryDetailView {
     func viewWidth() -> CGFloat {
       //isPortrait?
         if (UIScreen.main.bounds.width < UIScreen.main.bounds.height){
-            print(UIScreen.main.bounds.width)
-            print(UIScreen.main.bounds.height)
             return UIScreen.main.bounds.height
         } else {
-            print(UIScreen.main.bounds.width)
-            print(UIScreen.main.bounds.height)
             return UIScreen.main.bounds.width
         }
     }

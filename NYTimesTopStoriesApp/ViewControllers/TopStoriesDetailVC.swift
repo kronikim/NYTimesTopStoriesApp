@@ -9,7 +9,7 @@ import UIKit
 import SafariServices
 
 final class TopStoriesDetailVC: BaseViewController<TopStoriesDetailVM> {
-    private enum Constant {
+    enum Constant {
         static let leadingSpacing: CGFloat = 18.0
         static let trailingSpacing: CGFloat = -18.0
     }

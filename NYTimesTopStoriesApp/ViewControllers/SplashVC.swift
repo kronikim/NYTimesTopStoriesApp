@@ -24,7 +24,7 @@ final class SplashVC: BaseViewController<SplashVM> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupViews()
+        applyCodeView()
         
         viewModel?.homeDataLoaded = { [weak self] data in
             let networkManager : NetworkManager = Network()
@@ -67,6 +67,12 @@ final class SplashVC: BaseViewController<SplashVM> {
     }
 }
 
+extension SplashVC {
+    func applyCodeView() {
+        setupViews()
+    }
+}
+    
 extension SplashVC: StoryboardInstantiable {
     static var storyboardName: String { return "Main" }
     static var storyboardIdentifier: String? { return "SplashVC" }

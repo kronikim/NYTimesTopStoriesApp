@@ -10,7 +10,7 @@ import UIKit
 @testable import NYTimesTopStoriesApp
 
 class SplashVCTests: XCTestCase {
-    var splashVC:SplashVC!
+    var splashVC: SplashVC!
 
     override func setUp() {
         let networkManager : NetworkManager = Network()
@@ -21,16 +21,21 @@ class SplashVCTests: XCTestCase {
         splashVC.viewModel = splashVM
         
         if(splashVC != nil){
+            splashVC.loadView()
             splashVC.viewDidLoad()
         }
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        splashVC = nil
     }
 
     func testViewLoad(){
         splashVC.viewDidLoad()
+    }
+    
+    func testUIElements(){
+        splashVC.applyCodeView()
     }
 
     func testStoryBoardID(){

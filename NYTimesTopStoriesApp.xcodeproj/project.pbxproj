@@ -45,6 +45,7 @@
 		D894ED8B28DBD92500CD40E8 /* SplashVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894ED8A28DBD92500CD40E8 /* SplashVCTests.swift */; };
 		D89B04FC28DBC16D00D97411 /* HTTPMethodTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89B04FB28DBC16D00D97411 /* HTTPMethodTest.swift */; };
 		D89B04FE28DBC21C00D97411 /* NYTopStoriesEndpointTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89B04FD28DBC21C00D97411 /* NYTopStoriesEndpointTest.swift */; };
+		D89C284228DBDF2000D2B895 /* TopStoriesVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89C284128DBDF2000D2B895 /* TopStoriesVCTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		D894ED8A28DBD92500CD40E8 /* SplashVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVCTests.swift; sourceTree = "<group>"; };
 		D89B04FB28DBC16D00D97411 /* HTTPMethodTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethodTest.swift; sourceTree = "<group>"; };
 		D89B04FD28DBC21C00D97411 /* NYTopStoriesEndpointTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTopStoriesEndpointTest.swift; sourceTree = "<group>"; };
+		D89C284128DBDF2000D2B895 /* TopStoriesVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesVCTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				D89B04FD28DBC21C00D97411 /* NYTopStoriesEndpointTest.swift */,
 				D885946628DBCA8300B92064 /* TopStoriesModelTest.swift */,
 				D894ED8A28DBD92500CD40E8 /* SplashVCTests.swift */,
+				D89C284128DBDF2000D2B895 /* TopStoriesVCTests.swift */,
 			);
 			path = NYTimesTopStoriesAppTests;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 			files = (
 				D89B04FC28DBC16D00D97411 /* HTTPMethodTest.swift in Sources */,
 				D885946728DBCA8300B92064 /* TopStoriesModelTest.swift in Sources */,
+				D89C284228DBDF2000D2B895 /* TopStoriesVCTests.swift in Sources */,
 				D894ED8B28DBD92500CD40E8 /* SplashVCTests.swift in Sources */,
 				D877BB4E28DA6251004421BF /* NYTimesTopStoriesAppTests.swift in Sources */,
 				D89B04FE28DBC21C00D97411 /* NYTopStoriesEndpointTest.swift in Sources */,

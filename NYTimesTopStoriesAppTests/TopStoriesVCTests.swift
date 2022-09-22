@@ -10,6 +10,8 @@ import XCTest
 @testable import NYTimesTopStoriesApp
 class TopStoriesVCTests: XCTestCase {
     var topStoriesListVC:TopStoriesListVC!
+    let tableView:UITableView = UITableView()
+    let indexPath:IndexPath = IndexPath(row: 1, section: 1)
   
     override func setUp() {
         super.setUp()
@@ -40,5 +42,17 @@ class TopStoriesVCTests: XCTestCase {
     func testStoryBoardID(){
         XCTAssertEqual(TopStoriesListVC.storyboardIdentifier, "TopStoriesListVC")
         XCTAssertEqual(TopStoriesListVC.storyboardName, "Main")
+    }
+    
+    func testTableViewCellForRow() {
+        XCTAssertNotNil(topStoriesListVC.tableView(tableView, numberOfRowsInSection: 2))
+    }
+        
+    func testTableViewDidSelectRowAt(){
+        topStoriesListVC.tableView(tableView, didSelectRowAt: indexPath)
+    }
+    
+    func testViewHeaderForSection(){
+        XCTAssertNotNil(topStoriesListVC.tableView(tableView, viewForHeaderInSection: 1))
     }
 }

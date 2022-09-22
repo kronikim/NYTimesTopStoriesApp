@@ -45,6 +45,7 @@ final class SplashVC: BaseViewController<SplashVM> {
     
     private func setupViews() {
         view.backgroundColor = .white
+        hideNavigationBar = true
         view.addSubview(logoImageView)
         view.addSubview(nameLabel)
         logoImageView.image = UIImage(named: "logo_newYorkTimes")

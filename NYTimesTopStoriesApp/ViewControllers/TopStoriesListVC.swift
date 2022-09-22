@@ -121,6 +121,8 @@ private extension TopStoriesListVC {
       tableView.dataSource = self
       tableView.register(UINib(nibName: String(describing: StoryCell.self), bundle: nil), forCellReuseIdentifier: StoryCell.reuseIdentifier)
       tableView.translatesAutoresizingMaskIntoConstraints = false
+      tableView.showsHorizontalScrollIndicator = false
+      tableView.showsVerticalScrollIndicator =  false
       self.tableView.backgroundView = activityIndicator
       self.activityIndicator.center = self.tableView.backgroundView!.center
       activityIndicator.hidesWhenStopped = true

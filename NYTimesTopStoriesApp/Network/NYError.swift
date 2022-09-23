@@ -6,8 +6,8 @@
 //
 
 import Foundation
-public enum NYError: Error {
 
+public enum NYError: Error {
     case unknown
     case responeNull
     case invalidRequest

@@ -35,13 +35,11 @@ class ImageLoader {
     
     func loadImage(_ url: URL, _ completion: @escaping (Result<UIImage, Error>) -> Void) -> UUID? {
         
-        //Check if Url exists as a key in memory cache
         if let img = loadedImages[url] {
             completion(.success(img))
             return nil
         }
         
-        // UUID instance that is used to identify the data task
         let uuid = UUID()
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
@@ -55,12 +53,7 @@ class ImageLoader {
                 return
             }
             
-            // Handle error
-            guard let error = error else {
-                // without an image or an error, we'll just ignore this for now
-                // you could add your own special error cases for this scenario
-                return
-            }
+            guard let error = error else { return }
             
             // Check the error reason. If it is because of task being canceled. If the error is anything other than canceling the task, we forward that to the caller of loadImage(_:completion:)
             guard (error as NSError).code == NSURLErrorCancelled else {

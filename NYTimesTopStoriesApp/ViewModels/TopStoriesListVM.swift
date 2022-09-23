@@ -21,7 +21,6 @@ class TopStoriesListVM: ViewModel {
             Result<NYTopStoriesResponse, NYError>) in
             switch result {
                 case .success(let response):
-                      print("getNewCategortiesStoryList response : \(response)")
                       self.response = response
                       completion(response)
                 case .failure(let error):

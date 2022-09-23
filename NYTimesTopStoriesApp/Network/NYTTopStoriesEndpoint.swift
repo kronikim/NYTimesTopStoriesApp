@@ -35,7 +35,6 @@ public enum NYTTopStoriesEndpoint : String, CaseIterable{
     case us = "us"
     case world = "world"
     
-    
     var categoryValue:String
     {
         switch self {

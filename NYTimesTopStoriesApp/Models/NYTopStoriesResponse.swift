@@ -10,7 +10,7 @@ import Foundation
 struct NYTopStoriesResponse {
   var status : String?
   var copyright : String?
-  var numResults : Int64?
+  var numResults : Int?
   var results : [TopStories]?
 }
 
@@ -26,7 +26,11 @@ extension NYTopStoriesResponse : Decodable {
     let container = try decoder.container(keyedBy: storyResponseCodingKeys.self)
     status = try container.decode(String.self, forKey: .status)
     copyright = try container.decode(String.self, forKey: .copyright)
-    numResults = try container.decode(Int64.self, forKey: .numResults)
+    if let numResultsTemp = try? container.decode(Int.self, forKey: .numResults) {
+        numResults = numResultsTemp
+    } else {
+        numResults = Int(try container.decode(String.self, forKey: .numResults)) ?? Int(0)
+    }
     results = try container.decode([TopStories].self, forKey: .results)
   }
 }
@@ -125,8 +129,16 @@ extension MultiMedia : Decodable {
     let container = try decoder.container(keyedBy: MultiMediaCodingKeys.self)
     url = try container.decode(String.self, forKey: .url)
     format = try container.decode(String.self, forKey: .format)
-    height = try container.decode(Int.self, forKey: .height)
-    width = try container.decode(Int.self, forKey: .width)
+    if let heightTemp = try? container.decode(Int.self, forKey: .height) {
+        height = heightTemp
+    } else {
+        height = Int(try container.decode(String.self, forKey: .height)) ?? Int(0)
+    }
+    if let widthTemp = try? container.decode(Int.self, forKey: .width) {
+        width = widthTemp
+    } else {
+        width = Int(try container.decode(String.self, forKey: .width)) ?? Int(0)
+    }
     subtype = try container.decode(String.self, forKey: .subtype)
     caption = try container.decode(String.self, forKey: .caption)
     type = try container.decode(String.self, forKey: .type)

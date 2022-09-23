@@ -26,3 +26,12 @@ API is from https://developer.nytimes.com which works with a unique API key. Ple
 Link to the Top Stories API guide : https://developer.nytimes.com/docs/top-stories-product/1/overview 
  
 Link to the JSON model : https://developer.nytimes.com/docs/top-stories-product/1/types/Article
+
+![](https://user-images.githubusercontent.com/29311417/191975312-8aecbe0d-f4d7-4de6-8d18-2368ef92312d.png)
+
+
+![](https://user-images.githubusercontent.com/29311417/191975336-281aa011-9775-4e95-9c62-fc1cad88f8ed.png)
+
+![](https://user-images.githubusercontent.com/29311417/191975348-89aef44a-1936-447a-8d6d-815ab3473e11.png)
+
+![](https://user-images.githubusercontent.com/29311417/191975362-537d72e5-045d-43e7-acf3-a7328cb28e9b.png)

@@ -27,7 +27,7 @@ Link to the Top Stories API guide : https://developer.nytimes.com/docs/top-stori
  
 Link to the JSON model : https://developer.nytimes.com/docs/top-stories-product/1/types/Article
 
-<img width="357" alt="image" src="https://user-images.githubusercontent.com/29311417/191973414-88f2ef22-8188-4f7a-a7d5-2975766c4e98.png”>
-<img width=“357" alt="image" src="https://user-images.githubusercontent.com/29311417/191973546-4ec48fc5-6d01-496f-9b74-d87c93717814.png”>
+<img width="358" alt="splashPage" src="https://user-images.githubusercontent.com/29311417/191979821-b21fc9f7-9e74-4f59-a4c6-d2b8f21dccf9.png">
+<img width="362" alt="listPage" src="https://user-images.githubusercontent.com/29311417/191979838-8f547b45-9c2e-43fe-b027-ac3f02d001ff.png">
 <img width="357" alt="image" src="https://user-images.githubusercontent.com/29311417/191978611-4c22685e-bb1c-4a78-ae41-6be86c13ed87.png">
 <img width="728" alt="image" src="https://user-images.githubusercontent.com/29311417/191978517-38b19122-cf3f-408c-8aeb-b56f84efc16e.png">

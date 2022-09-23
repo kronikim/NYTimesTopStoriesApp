@@ -39,7 +39,7 @@ class StoryCell: UITableViewCell {
         DispatchQueue.global().async {
             let mediaArr = newsItem.multimedia
             if let index = mediaArr?.firstIndex(where: { item in
-                item.format == ImageFormat.thumbnail.description
+                item.format == ImageFormat.threeByTwoSmallAt2X.description
             }) {
                 let smallImgData = mediaArr?[index]
                 if let url = URL(string: smallImgData?.url ?? "") {

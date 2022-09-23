@@ -27,11 +27,7 @@ Link to the Top Stories API guide : https://developer.nytimes.com/docs/top-stori
  
 Link to the JSON model : https://developer.nytimes.com/docs/top-stories-product/1/types/Article
 
-![](https://user-images.githubusercontent.com/29311417/191975312-8aecbe0d-f4d7-4de6-8d18-2368ef92312d.png)
-
-
-![](https://user-images.githubusercontent.com/29311417/191975336-281aa011-9775-4e95-9c62-fc1cad88f8ed.png)
-
-![](https://user-images.githubusercontent.com/29311417/191975348-89aef44a-1936-447a-8d6d-815ab3473e11.png)
-
-![](https://user-images.githubusercontent.com/29311417/191975362-537d72e5-045d-43e7-acf3-a7328cb28e9b.png)
+<img width="357" alt="image" src="https://user-images.githubusercontent.com/29311417/191973414-88f2ef22-8188-4f7a-a7d5-2975766c4e98.png”>
+<img width=“357" alt="image" src="https://user-images.githubusercontent.com/29311417/191973546-4ec48fc5-6d01-496f-9b74-d87c93717814.png”>
+<img width="357" alt="image" src="https://user-images.githubusercontent.com/29311417/191978611-4c22685e-bb1c-4a78-ae41-6be86c13ed87.png">
+<img width="728" alt="image" src="https://user-images.githubusercontent.com/29311417/191978517-38b19122-cf3f-408c-8aeb-b56f84efc16e.png">

@@ -42,6 +42,9 @@ final class TopStoriesListVC: BaseViewController<TopStoriesListVM> {
         viewModel?.errorHandler = { [weak self] error in
             self?.activityIndicator.stopAnimating()
             AlertUtil.showAlert(self!, withTitle: "Top Stories Error".local, andMessage: error.localizedDescription)
+            self?.btnRetry.isHidden = false
+            self?.noDataFoundLbl.text = error.localizedDescription
+            self?.noDataFoundLbl.isHidden = false
         }
     }
     

@@ -121,7 +121,8 @@ extension TopStoriesDetailVC: ViewCodeConfiguration {
         stackView.axis = .vertical
         detailView.detailData = viewModel?.detailData
         detailView.delegate = self
-      
+        scrollView.showsHorizontalScrollIndicator = false
+        scrollView.showsVerticalScrollIndicator = false
     }
 }
 extension TopStoriesDetailVC: DetailSeeMoreDelegate {

@@ -15,24 +15,24 @@ struct NYTopStoriesResponse {
 }
 
 extension NYTopStoriesResponse : Decodable {
-  private enum storyResponseCodingKeys: String, CodingKey {
-    case status
-    case copyright
-    case numResults = "num_results"
-    case results
-  }
-  
-  init(from decoder: Decoder) throws {
-    let container = try decoder.container(keyedBy: storyResponseCodingKeys.self)
-    status = try container.decode(String.self, forKey: .status)
-    copyright = try container.decode(String.self, forKey: .copyright)
-    if let numResultsTemp = try? container.decode(Int.self, forKey: .numResults) {
-        numResults = numResultsTemp
-    } else {
-        numResults = Int(try container.decode(String.self, forKey: .numResults)) ?? Int(0)
+    private enum storyResponseCodingKeys: String, CodingKey {
+      case status
+      case copyright
+      case numResults = "num_results"
+      case results
     }
-    results = try container.decode([TopStories].self, forKey: .results)
-  }
+    
+    init(from decoder: Decoder) throws {
+      let container = try decoder.container(keyedBy: storyResponseCodingKeys.self)
+      status = try container.decode(String.self, forKey: .status)
+      copyright = try container.decode(String.self, forKey: .copyright)
+      if let numResultsTemp = try? container.decode(Int.self, forKey: .numResults) {
+          numResults = numResultsTemp
+      } else {
+          numResults = Int(try container.decode(String.self, forKey: .numResults)) ?? Int(0)
+      }
+      results = try container.decode([TopStories].self, forKey: .results)
+    }
 }
 
 extension NYTopStoriesResponse {
@@ -74,32 +74,32 @@ struct TopStories {
 }
 
 extension TopStories : Decodable {
-  enum TopStoriesCodingKeys: String, CodingKey {
-    case section
-    case subsection
-    case abstract
-    case byline
-    case multimedia
-    case itemType = "item_type"
-    case publishedDate = "published_date"
-    case shortUrl = "short_url"
-    case title
-    case url
-  }
-  
-  init(from decoder: Decoder) throws {
-    let container = try decoder.container(keyedBy: TopStoriesCodingKeys.self)
-    section = try container.decode(String.self, forKey: .section)
-    subsection = try container.decode(String.self, forKey: .subsection)
-    abstract = try container.decode(String.self, forKey: .abstract)
-    byline = try container.decode(String.self, forKey: .byline)
-    multimedia = try container.decode([MultiMedia].self, forKey: .multimedia)
-    itemType = try container.decode(String.self, forKey: .itemType)
-    publishedDate = try container.decode(String.self, forKey: .publishedDate)
-    shortUrl = try container.decode(String.self, forKey: .shortUrl)
-    title = try container.decode(String.self, forKey: .title)
-    url = try container.decode(String.self, forKey: .url)
-  }
+    enum TopStoriesCodingKeys: String, CodingKey {
+      case section
+      case subsection
+      case abstract
+      case byline
+      case multimedia
+      case itemType = "item_type"
+      case publishedDate = "published_date"
+      case shortUrl = "short_url"
+      case title
+      case url
+    }
+    
+    init(from decoder: Decoder) throws {
+      let container = try decoder.container(keyedBy: TopStoriesCodingKeys.self)
+      section = try container.decode(String.self, forKey: .section)
+      subsection = try container.decode(String.self, forKey: .subsection)
+      abstract = try container.decode(String.self, forKey: .abstract)
+      byline = try container.decode(String.self, forKey: .byline)
+      multimedia = try container.decode([MultiMedia].self, forKey: .multimedia)
+      itemType = try container.decode(String.self, forKey: .itemType)
+      publishedDate = try container.decode(String.self, forKey: .publishedDate)
+      shortUrl = try container.decode(String.self, forKey: .shortUrl)
+      title = try container.decode(String.self, forKey: .title)
+      url = try container.decode(String.self, forKey: .url)
+    }
 }
 
 struct MultiMedia {
@@ -114,33 +114,33 @@ struct MultiMedia {
 }
 
 extension MultiMedia : Decodable {
-  enum MultiMediaCodingKeys: String, CodingKey {
-    case url
-    case format
-    case height
-    case width
-    case subtype
-    case caption
-    case type
-      
-  }
-  
-  init(from decoder: Decoder) throws {
-    let container = try decoder.container(keyedBy: MultiMediaCodingKeys.self)
-    url = try container.decode(String.self, forKey: .url)
-    format = try container.decode(String.self, forKey: .format)
-    if let heightTemp = try? container.decode(Int.self, forKey: .height) {
-        height = heightTemp
-    } else {
-        height = Int(try container.decode(String.self, forKey: .height)) ?? Int(0)
+    enum MultiMediaCodingKeys: String, CodingKey {
+      case url
+      case format
+      case height
+      case width
+      case subtype
+      case caption
+      case type
+        
     }
-    if let widthTemp = try? container.decode(Int.self, forKey: .width) {
-        width = widthTemp
-    } else {
-        width = Int(try container.decode(String.self, forKey: .width)) ?? Int(0)
+    
+    init(from decoder: Decoder) throws {
+      let container = try decoder.container(keyedBy: MultiMediaCodingKeys.self)
+      url = try container.decode(String.self, forKey: .url)
+      format = try container.decode(String.self, forKey: .format)
+      if let heightTemp = try? container.decode(Int.self, forKey: .height) {
+          height = heightTemp
+      } else {
+          height = Int(try container.decode(String.self, forKey: .height)) ?? Int(0)
+      }
+      if let widthTemp = try? container.decode(Int.self, forKey: .width) {
+          width = widthTemp
+      } else {
+          width = Int(try container.decode(String.self, forKey: .width)) ?? Int(0)
+      }
+      subtype = try container.decode(String.self, forKey: .subtype)
+      caption = try container.decode(String.self, forKey: .caption)
+      type = try container.decode(String.self, forKey: .type)
     }
-    subtype = try container.decode(String.self, forKey: .subtype)
-    caption = try container.decode(String.self, forKey: .caption)
-    type = try container.decode(String.self, forKey: .type)
-  }
 }

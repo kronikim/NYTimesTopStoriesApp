@@ -44,7 +44,7 @@ class CategoryMenuCell: UICollectionViewCell {
         self.contentView.addSubview(lblTitle)
         lblTitle.textColor = UIColor.lightGray
         lblTitle.translatesAutoresizingMaskIntoConstraints = false
-        lblTitle.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor, constant: 0).isActive = true
+        lblTitle.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor).isActive = true
         lblTitle.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 15).isActive = true
         lblTitle.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -15).isActive = true
         

@@ -48,6 +48,7 @@
 		D89BF77C28DBF26000AE42D7 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89BF77B28DBF26000AE42D7 /* Localization.swift */; };
 		D89C284228DBDF2000D2B895 /* TopStoriesVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89C284128DBDF2000D2B895 /* TopStoriesVCTests.swift */; };
 		D89C284428DBE37700D2B895 /* TopStoriesDetailVCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89C284328DBE37700D2B895 /* TopStoriesDetailVCTest.swift */; };
+		D8ABE63228DDD6600003D3CE /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8ABE63128DDD65F0003D3CE /* NetworkResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		D89BF77B28DBF26000AE42D7 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		D89C284128DBDF2000D2B895 /* TopStoriesVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesVCTests.swift; sourceTree = "<group>"; };
 		D89C284328DBE37700D2B895 /* TopStoriesDetailVCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesDetailVCTest.swift; sourceTree = "<group>"; };
+		D8ABE63128DDD65F0003D3CE /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 				D877BB6B28DA67BC004421BF /* Endpoint.swift */,
 				D877BB6D28DA67DC004421BF /* HTTPMethod.swift */,
 				D877BB8128DA6ECB004421BF /* NYTTopStoriesEndpoint.swift */,
+				D8ABE63128DDD65F0003D3CE /* NetworkResponse.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				D89BF77A28DBF21900AE42D7 /* StringExtension.swift in Sources */,
 				D877BB3728DA624E004421BF /* AppDelegate.swift in Sources */,
 				D877BB9728DA7577004421BF /* CategoryMenuBar.swift in Sources */,
+				D8ABE63228DDD6600003D3CE /* NetworkResponse.swift in Sources */,
 				D89BF77C28DBF26000AE42D7 /* Localization.swift in Sources */,
 				D877BB7728DA6BA1004421BF /* SplashVC.swift in Sources */,
 				D877BB7528DA69C3004421BF /* BaseViewController.swift in Sources */,
